@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Codeforces</string>
+    <string name="title_users">Users</string>
+    <string name="title_contests">Contests</string>
+    <string name="title_problems">Problems</string>
+    <string name="tag_users">Users</string>
+    <string name="tag_contests">Contests</string>
+    <string name="tag_actions">Actions</string>
+    <string name="tag_problems">Problems</string>
+
+    <string-array name="tags">
+        <item>choose tags</item>
+        <item>*combine tags by OR</item>
+        <item>2-sat</item>
+        <item>binary search</item>
+        <item>bitmasks</item>
+        <item>brute force</item>
+        <item>chinese remainder theorem</item>
+        <item>combinatorics</item>
+        <item>constructive algorithms</item>
+        <item>data structures</item>
+        <item>dfs and similar</item>
+        <item>divide and conquer </item>
+        <item>dp</item>
+        <item>dsu</item>
+        <item>expression parsing</item>
+        <item>fft</item>
+        <item>flows</item>
+        <item>games</item>
+        <item>geometry</item>
+        <item>graph matchings</item>
+        <item>graphs</item>
+        <item>greedy</item>
+        <item>hashing</item>
+        <item>implementation</item>
+        <item>interactive</item>
+        <item>math</item>
+        <item>matrices</item>
+        <item>meet-in-the-middle</item>
+        <item>number theory</item>
+        <item>probabilities</item>
+        <item>schedules</item>
+        <item>shortest paths</item>
+        <item>sortings</item>
+        <item>string suffix structures</item>
+        <item>strings</item>
+        <item>ternary search</item>
+        <item>trees</item>
+        <item>two pointers</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:tag="Problems"
+    android:padding="8dp"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_problemsTab_problems"
+        >
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout_problems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_problems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="?attr/actionBarSize"
+                tools:listitem="@layout/layout_problems_listitem"
+
+                />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_problemsTab_tags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/rating_range_selection"
+
+                >
+                <Spinner
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/spinner_tags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_tags"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/cool_rectangle_shape_rect"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rating_range_selection"
+                android:layout_above="@id/search_go_btn"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rating range"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    />
+                <EditText
+                    android:id="@+id/edit_text_start_rating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    />
+                <EditText
+                    android:id="@+id/edit_text_end_rating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/search_go_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GO"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:background="@drawable/cute_rectangle_gradient_border"
+                android:layout_margin="10dp"
+                />
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

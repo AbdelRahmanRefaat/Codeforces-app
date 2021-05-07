@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:padding="8dp"
+    android:layout_margin="3dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/problem_rating_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#08887C"
+
+            />
+        <TextView
+            android:id="@+id/problem_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@id/problem_rating_tv"
+            android:layout_toLeftOf="@id/problem_rating_tv"
+            android:textSize="17sp"
+            android:layout_margin="5dp"
+            android:textColor="#000000"
+
+            />
+        <ImageView
+            android:id="@+id/solved_count_ic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/problem_name_tv"
+            android:src="@drawable/ic_problem_solvec_count_20"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/contest_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+
+            android:textColor="#4B49AA"
+            android:textStyle="bold"
+            android:layout_below="@id/problem_name_tv"
+            android:layout_toEndOf="@id/solved_count_ic"
+            android:layout_toRightOf="@id/solved_count_ic"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

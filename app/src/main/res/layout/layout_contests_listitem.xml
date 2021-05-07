@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:id="@+id/parent_layout_contests"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/judge_icon"
+            android:src="@drawable/ic_cf"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/judge_icon"
+            android:id="@+id/contest_nameTV"
+            android:text="Name :"
+            android:textSize="18sp"
+            android:textColor="#2E0887"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf ="@id/judge_icon"
+            android:id="@+id/contest_typeTV"
+            android:layout_below="@id/contest_nameTV"
+            android:text="Type :"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contest_durationTV"
+            android:layout_toRightOf="@id/judge_icon"
+            android:layout_below="@id/contest_typeTV"
+            android:text="Duration :"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time :"
+            android:id="@+id/contest_start_time_TV"
+            android:layout_toRightOf="@id/judge_icon"
+            android:layout_below="@id/contest_durationTV"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="#09A6BD"
+            android:textSize="14sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contest_phaseTV"
+            android:layout_toRightOf="@id/judge_icon"
+            android:layout_below="@id/contest_start_time_TV"
+            android:text="Phase :"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="4dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+
+
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
